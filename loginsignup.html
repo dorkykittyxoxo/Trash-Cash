@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrashCash</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff ;
+            color: #166c2d;
+        }
+
+        .navbar {
+            background-color: #166c2d;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+
+        .login-btn {
+            background-color: white;
+            color: #166c2d;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #eaf7eb;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .card {
+            background: #eaf7eb;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0.1, 0.1, 0.1, 0.1);
+        }
+        .info-section {
+            background: #eaf7eb;
+            padding: 10px;
+            margin: 80px auto;
+
+            width: 550px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0.1, 0.1, 0.1, 0.1);
+        }
+        .info-section h2 {
+            color: #026e1f;
+        }
+        .testimonial-section {
+            padding: 40px;
+            text-align: center;
+        }
+        .testimonial {
+            background: #eaf7eb;
+            padding: 20px;
+            margin: 10px auto;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0.1, 0.1, 0.1, 0.1);
+
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: white;
+            width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        h3 {
+            color: #026e1f;
+        }
+        label {
+            display: block; /* Make labels appear on their own line */
+            margin-bottom: 5px; /* Add some space below the label */
+        }
+        input {
+            width: calc(100% - 22px); /* Adjust width for padding and border */
+            padding: 10px;
+            margin-bottom: 10px; /* Add space below the input */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        .btn {
+            background-color: #026e1f;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #014714;
+        }
+        .cancel {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            color: #026e1f;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #166c2d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><strong>TrashCash</strong></div>
+        <div class="menu">
+            <a href="Home page.html">Home</a>
+            <a href="About us.html">About us</a>
+            <a href="Eco-Coins.html">Eco-Coins</a>
+            <a href="Track waste.html">Track waste</a>
+        </div>
+        <a href="#" onclick="openModal()" class="login-btn">Login/Signup</a>
+    </div>
+    <div class="container">
+        <h1>Welcome to Waste Management</h1>
+        <div class="cards">
+            <div class="card">
+                <h3>Scan Your Trash</h3>
+                <p>Identify and categorize waste</p>
+            </div>
+            <div class="card">
+                <h3>Marketplace</h3>
+                <p>Buy and sell recycled goods</p>
+            </div>
+            <div class="card">
+                <h3>Track Your Waste</h3>
+                <p>Monitor your recycling progress</p>
+            </div>
+        </div>
+    </div>
+    <div class="info-section">
+        <h2>Why Waste Management Matters</h2>
+        <p>Proper waste management helps keep our environment clean and safe. Recycling reduces landfill waste and conserves natural resources. Join us in making the world a greener place!</p>
+    </div>
+    <div class="testimonial-section">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial">
+            <p>"This platform has made recycling so easy! I can now track my waste and earn rewards for responsible disposal."</p>
+            <strong>- A Happy User</strong>
+        </div>
+        <div class="testimonial">
+            <p>"A great initiative for sustainable living! The marketplace is an excellent way to find eco-friendly products."</p>
+            <strong>- Eco Enthusiast</strong>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <a href="footerabout.html">About</a>
+            <a href="footercontact.html">Contact</a>
+            <a href="footerfaqs.html">FAQs</a>
+            <a href="footerblog.html">Blog</a>
+            <a href="footerterms.html">Terms & Privacy</a>
+        </div>
+    </footer>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h3>Login</h3>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <button class="btn">Login</button>
+            <span class="cancel" onclick="closeModal()">Cancel</span>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById("loginModal").style.display = "flex";
+        }
+        function closeModal() {
+            document.getElementById("loginModal").style.display = "none";
+        }
+    </script>
+</body>
+</html>

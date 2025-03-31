@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrashCash</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #166c2d;
+        }
+
+        .navbar {
+            background-color: #166c2d;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+
+        .login-btn {
+            background-color: white;
+            color: #166c2d;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #eaf7eb;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .section {
+            background: #eaf7eb;
+            padding: 30px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+        .section h2 {
+            color: #0a7727;
+        }
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            text-align: center;
+            width: 200px;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 0%;
+            margin-bottom: 0px;
+        }
+        .footer {
+            background-color: #166c2d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .footer a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 10;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            width: 90%;
+            max-width: 500px;
+            text-align: left;
+            z-index: 20;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal h2 {
+            color: #166c2d;
+            margin-top: 0;
+            border-bottom: 2px solid #166c2d;
+            padding-bottom: 10px;
+        }
+
+        .modal .close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+            color: #166c2d;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .modal .close:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><strong>TrashCash</strong></div>
+        <div class="menu">
+            <a href="Home page.html">Home</a>
+            <a href="About us.html">About us</a>
+            <a href="Eco-Coins.html">Eco-Coins</a>
+            <a href="Track waste.html">Track waste</a>
+        </div>
+        <a href="loginsignup.html" class="login-btn">Login/Signup</a>
+    </div>
+
+    <div class="container">
+        <h1>About Trash Case</h1>
+        
+        <div class="section">
+            <h2>Our Mission</h2>
+            <p>Empower individuals and communities to take meaningful action in waste reduction and recycling through innovative technology and engaging rewards.</p>
+        </div>
+
+        <div class="section">
+            <h2>Our Vision</h2>
+            <p>Create a global ecosystem where waste management becomes a collaborative, rewarding, and environmentally impactful process for everyone.</p>
+        </div>
+
+        <div class="section">
+            <h2>Our Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="Ashish.jpg" alt=" Team Member ">
+                    <h3>Ashish Sharma</h3>
+                    <p>Team Member</p>
+                </div>
+                <div class="team-member">
+                    <img src="Sonakshi.jpg " alt="Team Leader">
+                    <h3>Sonakshi Saraswat</h3>
+                    <p>Team Leader</p>
+                </div>
+                <div class="team-member">
+                    <img src=" Formal Photo.jpg " alt="Team Member">
+                    <h3>Sachi Haresh Khushalani</h3>
+                    <p> Team Member </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer">
+            <a onclick="openModal('aboutModal')">About</a>
+            <a onclick="openModal('contactModal')">Contact</a>
+            <a onclick="openModal('faqsModal')">FAQs</a>
+            <a onclick="openModal('blogModal')">Blog</a>
+            <a onclick="openModal('termsModal')">Terms & Privacy</a>
+        </div>
+    
+        <div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+    
+        <div class="modal" id="aboutModal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>About Us</h2>
+            <p>Trash Cash is dedicated to revolutionizing waste management by promoting sustainability and responsible recycling. Our mission is to turn waste into value while keeping our environment clean and green.</p>
+        </div>
+    
+        <div class="modal" id="contactModal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Contact details...</p>
+        </div>
+    
+        <div class="modal" id="faqsModal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>FAQs</h2>
+            <p>Q: How does Trash Cash work?
+                A: We help individuals and businesses recycle waste responsibly. You can schedule a pickup or drop off your recyclables at our designated centers.
+                <br> <br/>
+                Q: What types of waste do you accept?
+                A: We accept paper, plastic, metals, e-waste, and more. Check our waste category list for details.
+                <br> <br/>
+                Q: Can I earn rewards for recycling?
+                A: Yes! Our reward system allows you to earn points for recycling, which can be redeemed for cash or discounts with our partners.
+                <br> <br/>
+                Q: How can businesses collaborate with Trash Cash?
+                A: We offer corporate waste management solutions. Contact us to set up a customized recycling plan for your business.</p>        </div>
+    
+        <div class="modal" id="blogModal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Our Blog</h2>
+            <p>Explore sustainable waste management practices, eco-friendly innovations, and inspiring success stories from our Trash Cash community. Join us in making a difference, one recycled item at a time.</p>
+        </div>
+    
+        <div class="modal" id="termsModal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Terms & Privacy</h2>
+            <p>By using Trash Cash services, you agree to our waste management policies, collection terms, and reward system guidelines. We prioritize your data security and ensure compliance with environmental regulations.</p>
+        </div>
+    
+        <script>
+            function openModal(modalId) {
+                document.getElementById(modalId).style.display = 'block';
+                document.getElementById('modalOverlay').style.display = 'block';
+            }
+    
+            function closeModal() {
+                document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
+                document.getElementById('modalOverlay').style.display = 'none';
+            }
+        </script>
+    </footer>
+</body>
+</html>
