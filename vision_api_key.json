@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "trashcash-455116",
+  "private_key_id": "493e0d0f93231b2340405d24dbd7ed48018dace9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDa5XzFDc5k9fob\nX8DMUt4nSnHPU9rx/Rb6rY3YV+23vWEwxbLk0X6dLx/dUonYuKqX1DtEjO2WjtNK\nBrC6/bkt92899hPBgp18mewbpysz/t+ztImna3AOcHrX8UK7f2u6l7y3cZPYnUWv\ns0WFDKTlLajU5+jffDCEK0SsAV6hZgr0E3DTYXMn/+6grsuL2jeCNA6Doh8AlPLZ\nKZRve4aGBS7++CWwpT3OzB4KCwzSZwVxbq4adJE3DoC8RYciYfsSt6u+tPZL6HEc\ncRWw7hTxdy2tLbff8SY4vEvwPhl9Q5y2zOW6BS0Bropss52ze+qZ7Or3UBCBQyi1\nMU6kakT1AgMBAAECggEAM5LYR9FN7KmryOFRmpJ3twgqMnAOaO95h4x2nB9zadQb\n3xLlaFYXn88nkczNn5s6zlT5tdgCbnOuQoW7BAOdqr/enNmqo/AzTNUzNPy5CCIn\n8L47pI+CslQ8DT7Ruz11U1xG4W3IKMQ9U/1IBuYIv9p3KdqOGoG3KJzNLD2SXzIt\nFHYZHdHBxwqFwM2CWyie3j5wtvvktJAT4eN2GO61q5Ky4it9tksF1/pgQ2A9tPhw\nYbT99NnDJzShxLJDkHYI5i9kRtynl2vYVGKZfb3t4c4ZkJg83f5x3LLBA1M01Bsg\nqkhyH2WJW8TtQQYrcKEsdguIMxIgDS+OYqRFZPEMbQKBgQDyOj+XSL1+SaJaBL+A\nh1jCbhs5Ddqmndk+hToWseBbASuzXk3w3JBGNdUMcg+QV+32JiAy9o4X0Q/Du/NC\nFm71OhSuwOaJ1Je/+tubGpYynJmopluaI7tT7YAzsmubDEHvChYJPEHzYhKLK0RF\ndR8lr0wGG6R8DF6ru81Yj4TXmwKBgQDnV6RwrePXzv3a+4r4LTmFA24ExSrEubpj\nI9EeRVfyoYJI/y1IpOsaMsicFYuO9fPfdezzcRkOseo67oPFX+FLLU1Qz9VQKf+9\nWKUMftfyyFLLhtDU9w+1S1+ts7ar4UPqkDq1kNnX3gJGJjRuVJn+rMm9vNgTmP32\nBBK9LZvGrwKBgQCYSby/LVFNe5fhxohrkyxfmP/uf+JOzIDPyMz7hbuLG5JRA+I2\no0Tlj2SxnWhhlJacId4ujEpLePnTUnAexaHe9TQZpleKoikB3wKAYle53DDTEjwX\nDY3xtyjZ17vFUBCH66xtBABmtur3qi0TCg6aD7rZQDnKb7B5geoZWqnnLwKBgQDS\nehCoW+0R6cdYtscnKK5OcGJmgKR6u6fyjyGxctGjdII+u7uNfk5QVafjKk8A0JEC\n3B2rF1j+36wF1f+ZUbR+W0ceoRioiK2ercnsZnM+9jct6QiS2f02qs7wELPACYFr\nJbHkg1dPaTOUcyn8v4gkBzy9HdVRbz6P2ADckWRLDQKBgQDl2LKLbM4BjCXVp6Q1\ntjXm2K0merjG+OF4hxbI7zu4uD8hzuE6sag7rhnVec2J8jvsHkQadZ/OzArZtNmI\nA1G1RbAJSPTFI+hUwm8JQcZojyPA1b9CWF9xVf3GIf4giARhauNoQ17YFD8TzCwz\n00FuN1yLrKQjd7URLpxHU/m15A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "trashcash-868@trashcash-455116.iam.gserviceaccount.com",
+  "client_id": "102529703695011009445",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/trashcash-868%40trashcash-455116.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
